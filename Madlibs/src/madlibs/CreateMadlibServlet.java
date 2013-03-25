@@ -47,7 +47,7 @@ public class CreateMadlibServlet extends HttpServlet {
 			genPlaceHolders(scan, resp);
 			
 			// the last element in the HTML Form is submit.
-			formElement(resp, "", "mybutton", "submit", "display", "SUBMIT");
+			formElement(resp, "", "mybutton", "submit", "display", "Submit");
 			
 			formFooter( resp );
 			
@@ -94,7 +94,7 @@ public class CreateMadlibServlet extends HttpServlet {
 	}
 	
 	public static void formHeader(HttpServletResponse resp) throws IOException {
-		String head = "<head> <style type=\"text/css\">\n @font-face {font-family: 'Cubano'; font-style: normal; src: local(\"Cubano-Regular\"), url(./fonts/Cubano-Regular.otf) format(\"opentype\"); }\n@font-face { font-family: 'Bariol'; font-style: normal; src: local(\"Bariol_Regular\"), url(./fonts/Bariol_Regular.otf) format(\"opentype\"); } \nbody {background-color: #DDDDDD} h1 {font-family: Cubano; font-size: 200px; margin-top: -50px; color: #666666; letter-spacing: -5px; } table { width: 600px; margin-left: auto; margin-right: auto; margin-top: -150px; } td { font-family: Bariol; font-size: 35px; line-height: 150%; text-align: right; color: #333333; } input {font-size:35px; border: 3px solid #333333; border-radius: 5px; font-family: Bariol; } input.mybutton {  font-family: Bariol;  font-size: 35px; font-weight: bold; color: #DDDDDD; background-color: 006699; } </style> </head>";
+		String head = "<head> <style type=\"text/css\">\n @font-face {font-family: 'Cubano'; font-style: normal; src: local(\"Cubano-Regular\"), url(./fonts/Cubano-Regular.otf) format(\"opentype\"); }\n@font-face { font-family: 'Bariol'; font-style: normal; src: local(\"Bariol_Regular\"), url(./fonts/Bariol_Regular.otf) format(\"opentype\"); } \nbody {background-color: #DDDDDD} h1 {font-family: Cubano; font-size: 200px; margin-top: -50px; color: #666666; letter-spacing: -5px; } table { width: 600px; margin-left: auto; margin-right: auto; margin-top: -150px; } td { font-family: Bariol; font-size: 35px; line-height: 150%; text-align: right; color: #333333; } input {font-size:35px; border: 3px solid #333333; border-radius: 5px; font-family: Bariol; font-weight: bold; } input.mybutton {  font-family: Bariol;  font-size: 35px; font-weight: bold; color: #DDDDDD; background-color: 006699; } </style> </head>";
 		resp.getWriter().println(head);
 		resp.getWriter().println("<center>");
 		resp.getWriter().println("<h1>WORDS</h1>");
