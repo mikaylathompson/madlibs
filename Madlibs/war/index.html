@@ -1,45 +1,51 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700|Montserrat+Subrayada:700' rel='stylesheet' type='text/css'>
     <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
   </head>
   <body>
-    <center>
-  <h1>MAD<br>LIBS</h1>
-  <h3>TEMPLATE:</h3>
-</center>
+  	<table class="frontpage">
+  		<tr class="title">
+  			<td class="title">
+  				<!--MADLIBS-->
+  				MAD<br>LIBS
 
+  			</td>
+  		</tr>
+  		<tr class="template">
+  			<td class="template">
+  				TEMPLATE:
+  				<!--Templates:-->
 
-  <form action="/create" method="get">
-    <table class="form">
-      <tr>
-       <td>
-          <div class="styled"> 
-            <input type="text" name="file" size ="40" class="textentry">
-          </div>
-        </td>
-       <td>
-        <div>
-          <input class="mybutton" type="submit" value="Submit" />
-        </div>
-      </td>
-      </tr>
-   </table>
-  </form>
-
-<table class="bottomnav">
-  <tr>
-    <td class="myname">
-      Mikayla Thompson
-    </td>
-    <td class="help">
-      <a class="bottomnav" href="about.html">About</a>
-    </td>
-    <td class="template">
-      <a class="bottomnav" href="template.html">Create a Template</a>
-    </td>
-  </tr>
-</table>
+  			</td>
+  		</tr>
+  		<tr class="form">
+  			<td>
+	  			<form action="/create" method="get">
+					<input list="templates" class="file" autofocus required>
+					<datalist id="templates">
+						<option value="tarzan.txt">
+						<option value="mymadlib.txt">
+						<option value="university.txt">
+						<option value="dance.txt">
+						<option value="clothes.txt">
+					  	<option value="bensonmarty.txt">
+						<option value="simple.txt">
+					</datalist>
+					<input class="button" type="submit" value="Submit" />
+				</form>
+			</td>
+  		</tr>
+  		<tr class="footer">
+  			<td class="footer">
+  				Mikayla Thompson | March 2013 | Yale CS112
+  			</td>
+  		</tr>
+  	</table>
   </body>
 </html>
+
+
+
+
 

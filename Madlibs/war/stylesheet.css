@@ -1,247 +1,78 @@
+
+@font-face {
+  font-family: 'Cubano';
+  font-style: normal;
+  src: local("Cubano-Regular"), url(./fonts/Cubano-Regular.otf) format("opentype"); 
+}
+
+@font-face {
+  font-family: 'Bariol';
+  font-style: normal;
+  src: local("Bariol_Regular"), url(./fonts/Bariol_Regular.otf) format("opentype"); 
+}
+
+
 body {
 	background-color: #DDDDDD
 }
 
-h1 {
-	font-family: 'Montserrat Subrayada', sans-serif;
-	text-align: center;
-	margin-top: 10px;
-	line-height: 70%;
-	font-size: 18em;
-	color: #333333;
-	letter-spacing: 0px;
-	height: .9em;
-}
-
-h2 {
-	text-align: center;
-	top: -0.8em;
-	font-family: 'Montserrat Subrayada', sans-serif;
-	padding: 5px;
-	padding-top: 30px;
-	line-height: 75%;
-	font-size: 14em;
-	color: #666666;
-	letter-spacing: -20px;
-	height: 0em;
-}
-
-h3 {
-	font-family: 'Ubuntu', sans-serif;
-	text-align: center;
-	line-height: 70%;
-	color: #006699;
-	font-size: 6em;
-	height: .35em;
-}
-
-h4 {
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: 400;
-	position: relative;
-	line-height: 150%;
-	color: #333333;
-	font-size: 2em;
-	left: 9.5em;
-}
-
-h4.temptext {
-	font-family: 'Ubuntu', sans-serif;
-	position: relative;
-	font-weight: 400;
-	line-height: 150%;
-	color: #333333;
-	font-size: 2em;
-	top: 16em;
-	left: 9.5em;
-}
-
-a.nav {
-	text-decoration: none;
-	color: #006699;
-}
-
-a.text {
-	color: #333333;
-	text-decoration: none;
-}
-
-table.navbar {
-	background-color: #DDDDDD;
-	border: none;
-	padding: 10px;
-	height: 2em;
-	width: 20em;
+table.frontpage {
+	width: 650px;
 	margin-left: auto;
 	margin-right: auto;
-	font-family: 'Ubuntu', sans-serif;
-	text-align: center;
-	line-height: 100%;
-	color: #006699;
-	font-size: 2em;
-	letter-spacing: 0px;
+	margin-top: -25px;
 
-}
-
-div.navbar {
-	position: fixed;
 	border: none;
-	top: 13em; /*12em*/
-	padding: 10px;
-	height: 2em;
-	width: 100%;
-	z-index: 9;
-	background-color: #DDDDDD;
 
-}
-
-sup {
-	font-size: .5em;
-}
-
-p.list {
-	font-weight: 300;
-	margin-left: 3em;
-}
-
-
-
-
-table.form {
-	width: 40%;
-	height: 4em;
 	text-align: center;
-	vertical-align: middle;
-	position: relative;
-	margin-left:auto; 
-    margin-right:auto;
-    top: -3em;
-    border: none;
-
 }
 
-div.styled { 
-    overflow:hidden; /* this hides the select's drop button */
-    padding-top:5px;
-    vertical-align: middle;
-    margin:0; 
-    background-color: #DDDDDD;
-    width:15em;
-    height: 2.6em;
-    border: solid 4px #333333; 
-    float: right;
-}
-
-input.textentry { 
-	vertical-align: middle;
-    width:100%;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 400;
-    font-size: 2.5em;
-    background-color:transparent;
-    background-image:none; 
-    -webkit-appearance: none; 
-    border:none; 
-    box-shadow:none; 
-    padding:0.2em 0.2em;
-}
-
-div { 
-	overflow:hidden;  
-    vertical-align: middle;
-    background-color: #006699;
-    border: solid 4px #333333; 
-    margin:0; 
-    width:10em;
-    height: 3em; 
-    float: left;
-}
-
-input.mybutton {
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: 700;
-	padding-top: 5px;
-	line-height: 160%;
-	background-color: 006699;
-    font-size: 2em;
-	padding:0;
-    vertical-align: middle;
-    margin:0; 
-    border: none;
-}
-
-table.bottomnav {
-	background-color: #AAAAAA;
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: 400;
-	font-size: 1.4em;
-	position: fixed;
-	text-align:center;  
-    width:50%;
-    margin-left:25%; 
-    margin-right:25%;
-    margin-top: -1.5em;
-    margin-bottom: .5em;
-    padding-bottom: .5em;
-    padding-top: .3em;
-}
-
-table.bottomnav2 {
-	background-color: #AAAAAA;
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: 400;
-	font-size: 1.4em;
-	text-align:center;  
-    width:50%;
-    margin-left:22%; 
-    margin-right:28%;
-    margin-top: -1.5em;
-    margin-bottom: .5em;
-    padding-bottom: .5em;
-    padding-top: .3em;
-}
-
-td.help {
-	width: 5em;
-	font-weight: 700;
-}
-
-td.home {
-	width: 6em;
-	font-weight: 700;
-}
-
-td.myname {
-	font-weight: 300;
-	text-align: right;
+td.title {
+	font-family: Cubano;
+	font-size: 315px;
+	letter-spacing: -10px;
+	line-height: 75%;
+	color: #333333;
 }
 
 td.template {
-	text-align: left;
-	font-weight: 700;
+	padding-top: 30px;
+	font-family: Cubano;
+	font-size: 115px;
+	letter-spacing: -5px;
+	line-height: 70%;
+	color: #006699
 }
 
-/*span {
-	background-color: #AAAAAA;
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: 400;
+tr.form {
+	height: 70px;
+}
+
+input {
+	font-size:35px;
+	margin-bottom:2px;
+	border: 3px solid #333333;
+	border-radius: 5px;
+	font-family: Bariol;
+}
+
+input.file {
+	width:350px;
+	background-color: #FFFFFF;
+}
+
+input.button {
+	width: 150px;
+	background-color: #006699;
+	color: #DDDDDD;
 	font-weight: bold;
-	text-align: center;
-	font-size: 1.5em;
-	position: fixed;
-	bottom: .5em;
-	left: 14.5em;
-
-}*/
-
-a.bottomnav {
-	text-decoration: none;
-	color: 006699;
-
 }
 
-strong {
-	font-weight: normal;
-	color: #333333;
-
+td.footer {
+	font-family: Bariol;
+	font-size: 18px;
+	padding-top: 5px;
 }
+
+
+
