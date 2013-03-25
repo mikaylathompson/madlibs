@@ -13,7 +13,8 @@
 
 
 body {
-	background-color: #DDDDDD
+	background-image: url('wavegrid.png');
+	background-color: #DDDDDD;
 }
 
 table.frontpage {
