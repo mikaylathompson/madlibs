@@ -84,7 +84,7 @@ public class DisplayMadlibServlet extends HttpServlet {
 	}
 
 	public static void outHeader(HttpServletResponse resp) throws IOException {
-		String head = "<head> <style type=\"text/css\">\n@font-face { font-family: 'Cubano'; font-style: normal; src: local(\"Cubano-Regular\"), url(./fonts/Cubano-Regular.otf) format(\"opentype\"); }\n@font-face { font-family: 'Bariol'; font-style: normal; src: local(\"Bariol_Regular\"), url(./fonts/Bariol_Regular.otf) format(\"opentype\"); }\nbody { background-image: url('wavegrid.png'); background-color: #DDDDDD; } table { width: 500px; margin-left: auto; margin-right: auto; } td.title { font-family: Cubano; text-align: center; font-size: 220px; margin-top: -50px; padding-bottom: 50px; color: #666666; line-height: 70%; letter-spacing: -5px;} pre { text-align: left; font-family: Bariol;font-size: 35px; line-height: 125%; color: #333333; } a { text-decoration: none; font-size: 40px; color: #006699;} </style> </head>";
+		String head = "<head> <style type=\"text/css\">\n@font-face { font-family: 'Cubano'; font-style: normal; src: local(\"Cubano-Regular\"), url(./fonts/Cubano-Regular.otf) format(\"opentype\"); }\n@font-face { font-family: 'Bariol'; font-style: normal; src: local(\"Bariol_Regular\"), url(./fonts/Bariol_Regular.otf) format(\"opentype\"); }\nbody { background-image: url('wavegrid.png'); background-color: #DDDDDD; } td.footer { text-align: center; font-family: Bariol; font-size: 18px; padding-top: 5px; } table { width: 500px; margin-left: auto; margin-right: auto; } td.title { font-family: Cubano; text-align: center; font-size: 220px; margin-top: -50px; padding-bottom: 50px; color: #666666; line-height: 70%; letter-spacing: -5px;} pre { text-align: left; font-family: Bariol;font-size: 35px; line-height: 125%; color: #333333; } a { text-decoration: none; font-size: 40px; color: #006699;} </style> </head>";
 		
 		resp.getWriter().println("<html>");
 		resp.getWriter().println(head);
@@ -98,6 +98,6 @@ public class DisplayMadlibServlet extends HttpServlet {
 	}
 	
 	public static void outFooter(HttpServletResponse resp) throws IOException {
-		resp.getWriter().println("<br><a href=\"index.html\">Play Again</a></pre></td></tr></table></body></html>");
+		resp.getWriter().println("<br><br><a href=\"index.html\">Play Again</a><br><br></pre></td></tr><tr><td class=\"footer\">Mikayla Thompson | March 2013 | Yale CS112</td></tr></table></body></html>");
 	}
 }
